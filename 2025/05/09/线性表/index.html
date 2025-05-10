@@ -19,24 +19,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"alienenz.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.23.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="我把自己学的一些东西分享在这上面,如果有什么好玩的或者错误的地方，欢迎加我QQ：2038085657">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Alien&#39;s Planet">
-<meta property="og:url" content="http://alienenz.github.io/archives/2025/04/index.html">
+    <meta name="description" content="考纲内容：  线性表的基本概念 线性表的实现（顺序存储和链式存储） 线性表的应用  线性表定义：线性表是具有相同数据类型（表明每个数据元素占有的空间一样大）的n（$ n \geqslant 0 $ ）个数据元素的有限序列，其中n为表长，当n为0时表示的是一个空表。 用L命名线性表，一般表示为L &#x3D; (a~1~,a~2~,…,a~i~,a~i+1~,…,a~n~) 式中，a~1~为表头元素，a~n~">
+<meta property="og:type" content="article">
+<meta property="og:title" content="线性表">
+<meta property="og:url" content="http://alienenz.github.io/2025/05/09/%E7%BA%BF%E6%80%A7%E8%A1%A8/index.html">
 <meta property="og:site_name" content="Alien&#39;s Planet">
-<meta property="og:description" content="我把自己学的一些东西分享在这上面,如果有什么好玩的或者错误的地方，欢迎加我QQ：2038085657">
+<meta property="og:description" content="考纲内容：  线性表的基本概念 线性表的实现（顺序存储和链式存储） 线性表的应用  线性表定义：线性表是具有相同数据类型（表明每个数据元素占有的空间一样大）的n（$ n \geqslant 0 $ ）个数据元素的有限序列，其中n为表长，当n为0时表示的是一个空表。 用L命名线性表，一般表示为L &#x3D; (a~1~,a~2~,…,a~i~,a~i+1~,…,a~n~) 式中，a~1~为表头元素，a~n~">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2025-05-09T12:21:45.000Z">
+<meta property="article:modified_time" content="2025-05-10T00:38:41.701Z">
 <meta property="article:author" content="Alien">
+<meta property="article:tag" content="数据结构，线性表">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://alienenz.github.io/archives/2025/04/">
+<link rel="canonical" href="http://alienenz.github.io/2025/05/09/%E7%BA%BF%E6%80%A7%E8%A1%A8/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"archives/2025/04/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://alienenz.github.io/2025/05/09/%E7%BA%BF%E6%80%A7%E8%A1%A8/","path":"2025/05/09/线性表/","title":"线性表"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>归档 | Alien's Planet</title>
+<title>线性表 | Alien's Planet</title>
   
 
 
@@ -90,7 +93,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Alien's Planet</h1>
+      <p class="site-title">Alien's Planet</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -170,9 +173,14 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
@@ -198,69 +206,120 @@
 
     </div>
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 2 篇日志。 继续努力。</span>
-      </div>
 
-      
-    <div class="collection-year">
-      <span class="collection-header">2025<span class="collection-year-count">2</span></span>
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://alienenz.github.io/2025/05/09/%E7%BA%BF%E6%80%A7%E8%A1%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar_alien.jpg">
+      <meta itemprop="name" content="Alien">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Alien's Planet">
+      <meta itemprop="description" content="我把自己学的一些东西分享在这上面,如果有什么好玩的或者错误的地方，欢迎加我QQ：2038085657">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="线性表 | Alien's Planet">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          线性表
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2025-05-09 20:21:45" itemprop="dateCreated datePublished" datetime="2025-05-09T20:21:45+08:00">2025-05-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2025-05-10 08:38:41" itemprop="dateModified" datetime="2025-05-10T08:38:41+08:00">2025-05-10</time>
+    </span>
+
+  
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>考纲内容：</p>
+<ol>
+<li>线性表的基本概念</li>
+<li>线性表的实现（顺序存储和链式存储）</li>
+<li>线性表的应用</li>
+</ol>
+<p>线性表定义：线性表是<strong>具有相同数据类型</strong>（表明每个数据元素占有的空间一样大）的n（$ n \geqslant 0 $ ）个数据元素的有限序列，其中n为表长，当n为0时表示的是一个空表。<br>
+<strong>用L命名线性表，一般表示为L = (a~1~,a~2~,…,a~i~,a~i+1~,…,a~n~)</strong><br>
+式中，a~1~为表头元素，a~n~为表尾元素</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2025-04-27T15:34:27+08:00"
-              content="2025-04-27">
-          04-27
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2025/04/27/post/" itemprop="url">
-            <span itemprop="name">post</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          
 
-      
-    </header>
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Alien
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://alienenz.github.io/2025/05/09/%E7%BA%BF%E6%80%A7%E8%A1%A8/" title="线性表">http://alienenz.github.io/2025/05/09/线性表/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%8C%E7%BA%BF%E6%80%A7%E8%A1%A8/" rel="tag"># 数据结构，线性表</a>
+          </div>
+
+        
+
+    </footer>
   </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2025-04-19T19:09:35+08:00"
-              content="2025-04-19">
-          04-19
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2025/04/19/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
+</div>
 
 
-    </div>
-  </div>
-  
-  
-  
+
+
+
 
 </div>
   </main>

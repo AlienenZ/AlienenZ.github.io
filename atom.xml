@@ -6,7 +6,7 @@
   <link href="http://alienenz.github.io/atom.xml" rel="self"/>
   
   <link href="http://alienenz.github.io/"/>
-  <updated>2025-04-27T07:34:27.432Z</updated>
+  <updated>2025-05-10T00:38:41.701Z</updated>
   <id>http://alienenz.github.io/</id>
   
   <author>
@@ -17,35 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>post</title>
-    <link href="http://alienenz.github.io/2025/04/27/post/"/>
-    <id>http://alienenz.github.io/2025/04/27/post/</id>
-    <published>2025-04-27T07:34:27.000Z</published>
-    <updated>2025-04-27T07:34:27.432Z</updated>
+    <title>线性表</title>
+    <link href="http://alienenz.github.io/2025/05/09/%E7%BA%BF%E6%80%A7%E8%A1%A8/"/>
+    <id>http://alienenz.github.io/2025/05/09/%E7%BA%BF%E6%80%A7%E8%A1%A8/</id>
+    <published>2025-05-09T12:21:45.000Z</published>
+    <updated>2025-05-10T00:38:41.701Z</updated>
     
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://alienenz.github.io/2025/04/19/hello-world/"/>
-    <id>http://alienenz.github.io/2025/04/19/hello-world/</id>
-    <published>2025-04-19T11:09:35.207Z</published>
-    <updated>2025-04-19T11:09:35.207Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>考纲内容：</p><ol><li>线性表的基本概念</li><li>线性表的实现（顺序存储和链式存储）</li><li>线性表的应用</li></ol><p>线性表定义：线性表是<strong>具有相同数据类型</strong>（表明每个数据元素占有的空间一样大）的n（$ n \geqslant 0 $ ）个数据元素的有限序列，其中n为表长，当n为0时表示的是一个空表。<br><strong>用L命名线性表，一般表示为L = (a~1~,a~2~,…,a~i~,a~i+1~,…,a~n~)</strong><br>式中，a~1~为表头元素，a~n~为表尾元素</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;p&gt;考纲内容：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;线性表的基本概念&lt;/li&gt;
+&lt;li&gt;线性表的实现（顺序存储和链式存储）&lt;/li&gt;
+&lt;li&gt;线性表的应用&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;线性表定义：线性表是&lt;strong&gt;具有相同数据类型&lt;/strong&gt;（表明每个数据元素占有的空间一样大</summary>
       
     
     
     
+    
+    <category term="数据结构，线性表" scheme="http://alienenz.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%8C%E7%BA%BF%E6%80%A7%E8%A1%A8/"/>
     
   </entry>
   
